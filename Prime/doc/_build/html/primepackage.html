@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>primepackage package &#8212; PrimeProcject 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="generate module" href="generate.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="primepackage-package">
+<h1>primepackage package<a class="headerlink" href="#primepackage-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-primepackage.primeio">
+<span id="primepackage-primeio-module"></span><h2>primepackage.primeio module<a class="headerlink" href="#module-primepackage.primeio" title="Permalink to this headline">¶</a></h2>
+<p>These are two functions that will both write to a file
+and read from the file.</p>
+<dl class="function">
+<dt id="primepackage.primeio.read_primes">
+<code class="sig-prename descclassname">primepackage.primeio.</code><code class="sig-name descname">read_primes</code><span class="sig-paren">(</span><em class="sig-param">file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#primepackage.primeio.read_primes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes just the one input which is a file and simply
+reads from the file.</p>
+<dl>
+<dt>Args:</dt><dd><p>File(file_name):input</p>
+</dd>
+<dt>Returns:</dt><dd><p>Doesn’t return anything. It reads from file.</p>
+</dd>
+<dt>Exception:</dt><dd><p>If anything goes wrong with the file then a message will display.
+Example:</p>
+<blockquote>
+<div><p>If the file doesn’t exist or if the file name doesn’t match.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="primepackage.primeio.write_primes">
+<code class="sig-prename descclassname">primepackage.primeio.</code><code class="sig-name descname">write_primes</code><span class="sig-paren">(</span><em class="sig-param">l</em>, <em class="sig-param">file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#primepackage.primeio.write_primes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes two inputs, a variable that holds a list and a file name.
+When the two arguments are accepted the are written into the accepted file.</p>
+<dl>
+<dt>Args:</dt><dd><blockquote>
+<div><p>Array (list):input</p>
+</div></blockquote>
+<p>File (file_name):input</p>
+</dd>
+<dt>Returns:</dt><dd><p>Doesn’t return anything. It writes to the file.</p>
+</dd>
+<dt>Exception:</dt><dd><p>If anything goes wrong with the file then a message will display.
+Example:</p>
+<blockquote>
+<div><p>If the file doesn’t exist or if the file name doesn’t match.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-primepackage.primemodule">
+<span id="primepackage-primemodule-module"></span><h2>primepackage.primemodule module<a class="headerlink" href="#module-primepackage.primemodule" title="Permalink to this headline">¶</a></h2>
+<p>These are defined functions that will
+do work on the input from the generate.py file</p>
+<dl class="function">
+<dt id="primepackage.primemodule.getNPrime">
+<code class="sig-prename descclassname">primepackage.primemodule.</code><code class="sig-name descname">getNPrime</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#primepackage.primemodule.getNPrime" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes the input and puts it into a list.
+When the while loop is done putting the numbers into the
+list it will return the list.</p>
+<dl>
+<dt>Args:</dt><dd><p>Number (int):input</p>
+</dd>
+<dt>Returns:</dt><dd><p>Array (list):output</p>
+</dd>
+<dt>Exceptions:</dt><dd><p>When anything goes wrong then a message will display.
+Example:</p>
+<blockquote>
+<div><p>If there is an out of bounds error or the number given
+isn’t a number, but a letter.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="primepackage.primemodule.isPrime">
+<code class="sig-prename descclassname">primepackage.primemodule.</code><code class="sig-name descname">isPrime</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#primepackage.primemodule.isPrime" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks if the number given.
+is a prime number.
+Args:</p>
+<blockquote>
+<div><p>Number (int):input</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Boolean (True or False)</p>
+</dd>
+</dl>
+<p>This is for the getNPrime function and is the
+boolean condition that runs the loop.
+Exeptions:</p>
+<blockquote>
+<div><p>if the accepted number n is less than zero
+then an exception is raised.</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-primepackage">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-primepackage" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">PrimeProcject</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Prime</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="generate.html">generate module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">primepackage package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Prime</a><ul>
+      <li>Previous: <a href="generate.html" title="previous chapter">generate module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Tamikal.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/primepackage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
